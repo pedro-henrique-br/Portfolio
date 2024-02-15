@@ -5,46 +5,151 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
   <link rel="stylesheet" href="/style/style.css">
-  <script src="javaScript/script.js" defer></script>
+  <script src="js/script.js" defer></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
   <title>Pedro Barbosa</title>
 </head>
 <body>
   
-  <nav class="navbar bg-secondary border-bottom border-body align-items-center d-flex p-2 vw-100" data-bs-theme="white">
-    <div class="container-fluid">
-      <a class="navbar-brand mb-0 h1 text-white">Pedro B.</a>
+  <nav id="nav" class="navbar navbar-expand-lg bg-body-tertiary d-flex p-2">
+    <div class="container-fluid d-flex p-2 mw-100">
+      <h1 class="navbar-brand fs-4" id="logo">< Pedro Barbosa /></h1>
+      <div class="navbar-fluid justify-content-end" id="navbarNav">
+        <ul class="navbar-nav fw-semibold">
+          <li class="nav-item">
+            <a class="nav-link fs-4" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link fs-4" href="#">About-Me</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link fs-4" href="#">Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link fs-4" href="#">Contact-Me</a>
+          </li>
+        </ul>
+      </div>
+      <div class="menu-hamburguer">
+        <div class="line" id="line-1"></div>
+        <div class="line" id="line-2"></div>
+        <div class="line" id="line-3"></div>
+      </div>
     </div>
-    <ul class="nav d-flex w-100">
-      <div class="nav-links d-flex justify-content-end w-100">
-        <li class="nav-item">
-          <a class="nav-link text-white" aria-current="page" href="#scrollspyHeading1">Home</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link text-white"  href="#scrollspyHeading2">About</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link text-white" href="#scrollspyHeading3">Projects</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link text-white" href="#scrollspyHeading4">Contact</a>
-      </li>
-    </ul>
   </nav>
 
-  <div data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-root-margin="0px 0px -40%" data-bs-smooth-scroll="true" class="scrollspy-example bg-body-tertiary p-3 rounded-2" tabindex="0">
-    <div class="container">
-      <h4 id="scrollspyHeading1">First heading</h4>
-      <p>...</p>
-    </div>
-    <h4 id="scrollspyHeading2">Second heading</h4>
-    <p>...</p>
-    <h4 id="scrollspyHeading3">Third heading</h4>
-    <p>...</p>
-    <h4 id="scrollspyHeading4">Fourth heading</h4>
-    <p>...</p>
-    <h4 id="scrollspyHeading5">Fifth heading</h4>
-    <p>...</p>
+  <div class="menu-mobile">
+    <ul class="nav-mobile-itens-nav fw-semibold">
+      <li class="nav-mobile-item">
+        <a class="nav-link fs-4" aria-current="page" href="#">Home</a>
+      </li>
+      <li class="nav-mobile-item">
+        <a class="nav-link fs-4" href="#">About-Me</a>
+      </li>
+      <li class="nav-mobile-item">
+        <a class="nav-link fs-4" href="#">Projects</a>
+      </li>
+      <li class="nav-mobile-item">
+        <a class="nav-link fs-4" href="#">Contact-Me</a>
+      </li>
+    </ul>
   </div>
-  
+
+  <div class="home-section">
+    <div class="home-container">
+        <h1>Front-End<br>Developer</h1>
+        <h4>Hi, i’m Pedro Barbosa a front-end Developer
+        based in Ilhabela, Brasil<span><img  id="pin "src="/assets/pin.png" alt="pin"></span></h4>
+        <div class="img-container">
+          <a href="#"><img src="/assets/github.png" alt="GitHub"></a>
+          <a href="#"><img src="/assets/linkedin.png" alt="Linkedin"></a>
+        </div>
+    </div>
+    <img id="me" src="/assets/eu.png" alt="Me">
+  </div>
+
+  <div class="about-me-section">
+      <h1>About-Me</h1>
+    <div class="about-me-container">
+      <div class="btn-container">
+        <button class="button">Know who i am</button>
+        <button class="button">Knowledge</button>
+        <button class="button">Experiences</button>
+      </div>
+      <div class="info-container">
+        <div class="know-who-i-am">
+          <h1>know who i am </h1>
+          <p>
+            As a young programmer passionate about creating interactive designs, I dive headfirst into the world of programming with enthusiasm and creativity. Since my childhood, I've been fascinated by the magic of transforming lines of code into dynamic and engaging visual experiences. My eyes light up when exploring new technologies and design techniques, always eager to experiment and innovate.
+          </p>
+          </div>
+        </div>
+    </div>
+  </div>
+
+  <div class="projects-section">
+    <h1>Projects</h1>
+    <div class="projects-container">
+      <div class="card-container">
+        <div class="arrow-btn" id="arrow-btn-left"><img src="/assets/left-arrow-button.png" alt="arrow-button"></div>
+        <div class="card">
+          <img src="..." class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        </div>
+        </div>
+        <div class="card">
+          <img src="..." class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        </div>
+        </div>
+        <div class="card">
+          <img src="..." class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        </div>
+        </div>
+        <div class="arrow-btn" id="arrow-btn-right"><img src="/assets/right-arrow-button.png" alt="arrow-button"></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="contact-me-section">
+    <h1>Contact-Me</h1>
+    <h3><i>Let’s Chat!<i></h3>
+      <div class="contact-me-container">
+      <div class="tel">
+          <img src="/assets/tel.png" alt="Tel">
+        <h2>Send me a message at 
+          (12) 988933305
+        </h2>
+      </div>
+      <div class="email">
+        <img src="/assets/gmail.png" alt="Gmail">
+        <h2>Send me a Email at
+          phbr10.12@gmail.com
+        </h2>
+      </div>
+      <div class="linkedin">
+          <img src="/assets/linkedin-2.png" alt="Linkedin">
+        <h2>
+        Send me a message at
+        pedro-barbosa-dev
+        </h2>
+      </div>
+      </div>
+    </div>
+  </div>
+ 
+  <div class="footer">
+    <h1>Copyright © 2024<span> < Pedro Barbosa /></span></h1>
+  </div>
+
 </body>
 </html>
