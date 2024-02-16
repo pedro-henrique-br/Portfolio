@@ -1,0 +1,40 @@
+*
+{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: 0px;
+}
+
+nav {
+  position: relative;
+  align-items: center;
+  justify-content: space-between;
+  display: flex;
+  height: 4rem;
+  width: 100vw;
+  color: #d8d8d8;
+  background: rgb(0, 0, 0);
+}
+
+nav h1 {
+  margin-left: 2rem;
+  font-size: 1.5rem;
+}
+
+.nav-itens {
+  display: flex;
+}
+
+.nav-itens ul {
+  margin-right: 4rem;
+  gap: 2.5rem;
+  display: flex;
+}
+
+.nav-itens ul li {
+  list-style: none;
+}
+
+.nav-itens ul li a{
+  color: #dadada;
+}
