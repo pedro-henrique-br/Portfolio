@@ -3,6 +3,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+
 }
 
 body {
@@ -30,7 +31,12 @@ nav {
   margin-right: 50px;
 }
 
+#nav {
+  position: inherit;
+}
+
 #navbarNav ul li {
+  position: inherit;
   color: #535353;
   margin-right: 20px;
 }
@@ -46,6 +52,30 @@ nav {
 
 #me {
   height: 300px;
+}
+
+.sideNav {
+  justify-content: flex-end;
+  display: flex;
+}
+
+.sideNav-nav {
+  display: none;
+  box-shadow: -10px 0px 10px#53535349;
+  background: #ffffff90;
+  backdrop-filter: blur(10px);
+  width: 15vw;
+  height: 100vh;
+  flex-direction: column;
+  position: fixed;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+}
+
+.sideNav-nav li {
+  color: #535353;
+  list-style: none;
 }
 
 .home-container {
@@ -163,6 +193,7 @@ nav {
 }
 
 .card {
+  position: inherit;
   height: 20rem;
   width: 18rem;
 }
@@ -235,9 +266,4 @@ nav {
   color: #535353;
 }
 
-
-#scroll {
-  width: 100vw;
-  margin-top: -20px;
-}
 
