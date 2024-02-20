@@ -40,7 +40,7 @@ nav {
   align-items: center;
   display: flex;
   justify-content: space-around;
-  height: 100vh;
+  height: 80vh;
   background: #EDEDED;
 }
 
@@ -94,7 +94,7 @@ nav {
 }
 
 .about-me-container {
-  margin-top: 8rem;
+  margin-top: 15rem;
   display: flex;
   justify-content: space-around;
 }
@@ -149,23 +149,20 @@ nav {
 }
 
 .projects-section h1 {
+  margin-top: 1rem;
   align-self: center;
   font-weight: 900;
   color: #535353;
-  margin-top: 1rem;
+  justify-self: flex-start;
 }
 
-.projects-container {
-  margin-top: 8rem;
-}
-
-.card-container { 
+.card-container {
+  margin-top: 15rem;
   display: flex;
   justify-content: space-around;
 }
 
 .card {
-  position: static;
   height: 20rem;
   width: 18rem;
 }
@@ -238,40 +235,9 @@ nav {
   color: #535353;
 }
 
-.menu-hamburguer {
-  cursor: pointer;
-  display: none;
-  flex-direction: column;
-}
 
-.menu-hamburguer .line {
-  border-radius: 4px;
-  height: 4px;
-  width: 40px;
-  margin-top: 6px;
-  background: #535353
-}
-
-.menu-mobile {
-  display: none;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
+#scroll {
   width: 100vw;
-  background: #ffff;
+  margin-top: -20px;
 }
 
-.menu-mobile ul li {
-  list-style: none;
-}
-
-@media  screen and (max-width: 992px) {
-  #navbarNav {
-    display: none;
-  }
-
-  .menu-hamburguer {
-    display: flex;
-  }
-
-}
