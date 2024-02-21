@@ -60,6 +60,8 @@ nav {
 }
 
 .sideNav-nav {
+  animation-name: showMenu;
+  animation-duration: 0.5s;
   display: none;
   box-shadow: -10px 0px 10px#53535349;
   background: #ffffff90;
@@ -74,6 +76,10 @@ nav {
 }
 
 .sideNav-nav li {
+  align-items: center;
+  height: 20px;
+  display: flex;
+  justify-content: center;
   color: #535353;
   list-style: none;
 }
@@ -266,4 +272,66 @@ nav {
   color: #535353;
 }
 
+#menu-hamburguer {
+  display: none;
+}
+
+#menu-hamburguer:hover {
+  cursor: pointer;
+}
+
+#close-icon {
+  margin-top: -14rem;
+  height: 40px;
+}
+
+#close-icon:hover {
+  cursor: pointer;
+}
+
+@keyframes showMenu {
+  from {
+    margin-right: -200px;
+  }
+  to {
+    margin-right: 0px;
+  }
+}
+@keyframes closeMenu {
+  from {
+    width: 13rem;
+  }
+  to {
+    width: 0rem;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .sideNav-nav {
+    width: 20rem;
+  }
+  
+  #menu-hamburguer {
+    display: flex;
+  }
+
+  .navbar-nav li{
+    display: none;
+  }
+
+}
+@media screen and (max-width: 602px) {
+  .sideNav-nav {
+    width: 30rem;
+  }
+
+  #menu-hamburguer {
+    display: flex;
+  }
+
+  .navbar-nav li{
+    display: none;
+  }
+
+}
 
