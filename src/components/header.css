@@ -1,0 +1,45 @@
+.header {
+  width: 100vw;
+  top: 0;
+  left: 0;
+  position: fixed;
+}
+
+.nav-container {
+  height: 4rem;
+  align-items: center;
+  display: flex;
+  justify-content: space-around;
+}
+
+.nav-list {
+  column-gap: 60px;
+  list-style: none;
+  display: flex;
+}
+
+.nav-logo,
+.nav-link {
+  font-size: 1.2rem;
+  font-weight: 600;
+  text-decoration: none;
+  color: #505050;
+}
+
+.nav-logo:hover,
+.nav-link:hover {
+  animation-fill-mode: both;
+  transition: 0.5s;
+  color: #b3b3b3;
+}
+
+.nav-toggle img,
+.nav-remove img {
+  cursor: pointer;
+  height: 36px;
+}
+
+.nav-toggle,
+.nav-remove {
+  display: none;
+}
