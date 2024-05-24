@@ -43,8 +43,8 @@ export default function Nav() {
           <ul className="mobile--menu__items">
             <li className="menu--links">
               <Link
-                className={location.pathname === "/home" ? "active" : ""}
-                to={"/home"}>
+                className={location.pathname === "/" ? "active" : ""}
+                to={"/"}>
                 Home
               </Link>
             </li>
@@ -75,8 +75,8 @@ export default function Nav() {
       <ul className="nav--items">
         <li className="nav--link">
           <Link
-            className={location.pathname === "/home" ? "active" : ""}
-            to={"/home"}>
+            className={location.pathname === "/" ? "active" : ""}
+            to={"/"}>
             Home
           </Link>
         </li>

@@ -2,14 +2,14 @@ import React from 'react'
 import ReactDOM from 'react-dom/client'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 
-import Header from './pages/Header/Header.jsx'
-import About from './pages/About/About.jsx'
-import Projects from './pages/Projects/Projects.jsx'
-import Contact from './pages/Contact/Contact.jsx'
+import Header from '../pages/Header/Header.jsx'
+import About from '../pages/About/About.jsx'
+import Projects from '../pages/Projects/Projects.jsx'
+import Contact from '../pages/Contact/Contact.jsx'
 
   const router = createBrowserRouter([
     {
-      path: "/home",
+      path: "/",
       element: <Header />
     },
     {
