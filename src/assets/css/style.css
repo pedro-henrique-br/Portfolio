@@ -59,7 +59,7 @@ Nav {
   cursor: pointer;
 }
 
-.active {
+.active-menu {
   flex-direction: column;
   display: flex;
   background: #ffff;
@@ -79,8 +79,16 @@ Nav {
 .menu--links a{
   font-size: 2rem;
   display: flex;
-  color: #000000;
+  color: #535353;
   text-decoration: none;
+}
+
+.menu--links a:hover {
+  color: #000000;
+}
+
+.menu--links .active {
+  color: #000000;
 }
 
 .close--menu {

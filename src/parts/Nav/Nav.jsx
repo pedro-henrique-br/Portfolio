@@ -9,25 +9,25 @@ export default function Nav() {
   const [mobileMenu, setMobileMenu] = useState("");
 
   const handleClickMenu = () => {
-    setMobileMenu("active");
+    setMobileMenu("active-menu");
   };
 
   return (
     <nav
       className="nav"
       style={
-        mobileMenu === "active" ? { height: "100vh" } : { height: "11vh" }
+        mobileMenu === "active-menu" ? { height: "100vh" } : { height: "11vh" }
       }>
       <h1
         className="nav--title"
         style={
-          mobileMenu === "active" ? { display: "none" } : { display: "flex" }
+          mobileMenu === "active-menu" ? { display: "none" } : { display: "flex" }
         }>
         {"<Pedro Barbosa />"}
       </h1>
       <IoMenu
         style={
-          mobileMenu === "active" ? { visibility: "hidden" } : { visibility: "visible" }
+          mobileMenu === "active-menu" ? { visibility: "hidden" } : { visibility: "visible" }
         }
         onClick={handleClickMenu}
         size={56}
