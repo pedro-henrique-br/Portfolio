@@ -16,7 +16,7 @@ export default function Nav() {
     <nav
       className="nav"
       style={
-        mobileMenu === "active-menu" ? { height: "100vh" } : { height: "11vh" }
+        mobileMenu === "active-menu" ? { height: "100vh" } : { height: "9vh" }
       }>
       <h1
         className="nav--title"
