@@ -3,7 +3,6 @@ import "../../assets/css/style.css";
 import { Link } from "react-router-dom";
 import { IoMenu } from "react-icons/io5";
 import { GoX } from "react-icons/go";
-import { BsDisplay } from "react-icons/bs";
 
 export default function Nav() {
   const [mobileMenu, setMobileMenu] = useState("");
