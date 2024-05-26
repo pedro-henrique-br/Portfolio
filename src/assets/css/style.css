@@ -274,6 +274,7 @@ header {
 
   .header__section--title {
     width: 15rem;
+    font-size: 3rem;
   }
 
   .section--subtitle {
