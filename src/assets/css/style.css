@@ -374,6 +374,12 @@ header {
 }
 
 @media screen and (max-width: 801px) {
+
+  * {
+    overflow-y: hidden;
+  }
+
+
   /* Header */
 
   .header--container {
@@ -397,13 +403,22 @@ header {
 
   /* About */
 
-  .about--section {
+  .about--container {
     height: 100%;
+
+  }
+  .about--section {
+    height: 100vh;
   }
   
 }
 
 @media screen and (max-width: 600px) {
+
+  * {
+    overflow-y: visible;
+  }
+
   /* Nav */
 
   .nav--title {
@@ -442,9 +457,11 @@ header {
 
   /* About */
 
+  .about--section {
+    height: 100%;
+  }
+
   .about--container {
-    margin-top: 15rem;
-    margin-bottom: 0rem;
     margin-left: 2.5rem;
     display: flex;
     flex-direction: column;
@@ -453,6 +470,7 @@ header {
 }
 
 @media screen and (max-width: 480px) {
+
   /* Nav */
 
   .nav--title {
