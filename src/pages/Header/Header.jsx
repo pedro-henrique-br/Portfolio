@@ -16,13 +16,13 @@ export default function Header() {
               style={{ cursor: "pointer" }}
               target="_blank"
               href="https://www.linkedin.com/in/pedro-barbosa-dev/">
-              <FaLinkedin size={36} color="#535353" />
+              <FaLinkedin size={36} />
             </a>
             <a
               style={{ cursor: "pointer" }}
               target="_blank"
               href="https://github.com/pedro-henrique-br">
-              <FaGithub size={36} color="#535353" />
+              <FaGithub size={36} />
             </a>
           </div>
         </section>
