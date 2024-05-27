@@ -82,8 +82,8 @@ export default function About() {
               <p>Bootstrap</p>
             </div>
             <div className="icon">
-              <li 
-              style={{
+              <li className="icon-container"
+                style={{
                   background: "#F0DB4F",
                   borderRadius: "16px",
                   width: "86px",
