@@ -1,6 +1,7 @@
 import Nav from "../../parts/Nav/Nav";
+import { motion } from "framer-motion";
 
-export default function About() {
+export default function About({isVisible}) {
   const icons = [
     "git",
     "github",
@@ -18,7 +19,7 @@ export default function About() {
     <div className="about">
       <Nav />
       <div className="about--section">
-        <div className="about--container">
+        <motion.div initial={{opacity: 0}} animate={{opacity: isVisible ? 1 : 0}} className="about--container">
           <h1>About Me</h1>
           <p className="about--subtitle">
             {"👋 Hello, I'm "}
@@ -45,8 +46,8 @@ export default function About() {
                 : null}
             </ul>
           </div>
+        </motion.div>
         </div>
-      </div>
     </div>
   );
 }
