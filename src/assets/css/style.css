@@ -25,7 +25,7 @@ Nav {
 }
 
 .nav--title a:hover {
-  color: #FFFF;
+  color: #ffff;
   cursor: pointer;
 }
 
@@ -47,11 +47,11 @@ Nav {
 }
 
 .nav--link a:hover {
-  color: #FF5471;
+  color: #ff5471;
 }
 
 .nav--link .active {
-  color: #FF5471;
+  color: #ff5471;
 }
 
 .hamburguer--icon {
@@ -102,11 +102,11 @@ Nav {
 }
 
 .menu--links a:hover {
-  color: #FF5471;
+  color: #ff5471;
 }
 
 .menu--links .active {
-  color: #FF5471;
+  color: #ff5471;
 }
 
 .close--menu {
@@ -151,7 +151,7 @@ header {
 }
 
 .header__section--title {
-  color: #FF5471;
+  color: #ff5471;
   font-weight: 900;
   font-size: 5rem;
   width: 25rem;
@@ -204,11 +204,11 @@ header {
   font-size: 3.5rem;
   margin-top: 20px;
   font-weight: 900;
-  color: #FF5471;
+  color: #ff5471;
 }
 
 .about--container span {
-  color: #FF5471;
+  color: #ff5471;
 }
 
 .about--container p {
@@ -259,10 +259,106 @@ header {
   visibility: visible;
 }
 
+/* Projects */
+
+.container {
+  overflow-y: scroll;
+  width: 100vw;
+  height: 100vh;
+  background: #222222;
+}
+
+main {
+  width: 100vw;
+  background: #222222;
+  display: flex;
+  flex-direction: column;
+}
+
+.project--container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+  width: 100vw;
+  gap: 50px;
+}
+
+.project--section {
+  gap: 80px;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.project__container--info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-start;
+  height: 35vh;
+}
+
+.project__container--info p {
+  width: 30vw;
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #e0e0e0;
+}
+
+.project__container--info h1 {
+  font-weight: 700;
+  color: #ff5471;
+}
+
+.project--info {
+  height: 300px;
+  width: 450px;
+  background: #333333;
+}
+
+.icon--container {
+  gap: 20px;
+  display: flex;
+  width: 400px;
+  text-align: center;
+}
+
+.icon--container p {
+  width: 100px;
+  font-size: 1rem;
+}
+
+.icon--container p a:hover {
+  color: #ff5471;
+}
+
+.icon--container p a {
+  color: #e0e0e0;
+  text-decoration: none;
+}
+
+.icon {
+  color: #ffff;
+  gap: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.icon:hover {
+  color: #ff5471;
+}
+
+.project--stack {
+  display: flex;
+  gap: 10px;
+}
+
 /* Responsive */
 
 @media screen and (max-width: 1200px) {
-
   * {
     overflow-y: visible;
   }
@@ -306,12 +402,9 @@ header {
   .about__subtitle--goal {
     width: 100%;
   }
-  
-
 }
 
 @media screen and (max-width: 1025px) {
-
   /* Header */
 
   .header__section--title {
@@ -333,7 +426,6 @@ header {
     overflow-y: visible;
     gap: 0px;
   }
-
 
   .icons--container {
     flex-wrap: wrap;
@@ -370,15 +462,45 @@ header {
     font-size: 1.5rem;
     width: 90%;
   }
-   
+
+  /* Projects */
+
+  .project__container--info p {
+    width: 30vw;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #e0e0e0;
+  }
+
+  .project--info {
+    height: 300px;
+    width: 450px;
+    background: #333333;
+  }
+
+  .icon--container {
+    gap: 20px;
+    display: flex;
+    width: 400px;
+    text-align: center;
+  }
+
+  .icon--container p {
+    width: 100px;
+    font-size: 1rem;
+  }
+
+  /* Projects */
+
+  .project--info {
+    margin-left: 2rem;
+  }
 }
 
 @media screen and (max-width: 801px) {
-
   * {
     overflow-y: hidden;
   }
-
 
   /* Header */
 
@@ -405,16 +527,67 @@ header {
 
   .about--container {
     height: 100%;
-
   }
   .about--section {
     height: 100vh;
   }
-  
+
+  /* Projects */
+
+  .project--container {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    gap: 0px;
+  }
+
+  .project__container--info p {
+    width: 45vw;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #e0e0e0;
+  }
+
+  .project__container--info {
+    text-align: center;
+    gap: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+  }
+
+  .project--info {
+    margin-left: 0;
+  }
+  .icon--container {
+    gap: 0px;
+    display: flex;
+    width: 300px;
+    text-align: center;
+  }
+
+  .icon--container p {
+    width: 130px;
+  }
+  .project--info {
+    height: 300px;
+    width: 500px;
+  }
+
+  .icon--container {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    width: 400px;
+    text-align: center;
+  }
 }
 
 @media screen and (max-width: 600px) {
-
   * {
     overflow-y: visible;
   }
@@ -434,9 +607,6 @@ header {
   }
 
   /* Header */
-
-  Header {
-    opacity: 1;
 
   .header--container {
     display: flex;
@@ -465,15 +635,33 @@ header {
   }
 
   .about--container {
+    height: 100vh;
     margin-left: 2.5rem;
     display: flex;
     flex-direction: column;
   }
 
+  /* Projects */
+
+  .project--info {
+    height: 250px;
+    width: 400px;
+  }
+
+  .project__container--info p {
+    width: 90vw;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #e0e0e0;
+  }
+
+  .icon--container p {
+    width: 100px;
+    font-size: 1rem;
+  }
 }
 
 @media screen and (max-width: 480px) {
-
   /* Nav */
 
   .nav--title {
@@ -510,6 +698,50 @@ header {
   .header__section--title {
     width: 15rem;
   }
+
+  /* About */
+
+  .about--section {
+    height: 100%;
+  }
+
+  .about--container {
+    height: 150vh;
+  }
+
+  /* Projects */
+
+  .project__container--info h1 {
+    font-size: 2rem;
+  }
+
+  .project--info {
+    height: 150px;
+    width: 300px;
+  }
+
+  .project__container--info p {
+    width: 7=80vw;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #e0e0e0;
+  }
+
+  .icon--container p {
+    width: 100px;
+    font-size: 1rem;
+  }
+  
+  .project--stack {
+    height: 36px;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+  }
+
+  .icon {
+    height: 30px;
+  }
 }
 
 @media screen and (max-width: 320px) {
@@ -537,4 +769,39 @@ header {
   .header__section--title {
     width: 15rem;
   }
+
+  /* About */
+
+  .about--container {
+    height: 180vh;
+  }
+
+  /* Projects */
+
+  .project--info {
+    height: 150px;
+    width: 300px;
+  }
+
+  .project__container--info p {
+    width: 7=80vw;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #e0e0e0;
+  }
+
+  .icon--container p {
+    width: 100px;
+    font-size: 1rem;
+  }
+
+  .project__container--info h1 {
+    font-size: 1.5rem;
+  }
+
+  .project--info {
+    height: 150px;
+    width: 250px;
+  }
+
 }
