@@ -7,8 +7,8 @@ export default function Projects({isVisible}) {
   return (
     <div className="container">
       <Nav />
-      <motion.div initial={{opacity: 0}} animate={{opacity: isVisible ? 1 : 0}}  className="project--section">
       <main>
+      <motion.div initial={{opacity: 0}} animate={{opacity: isVisible ? 1 : 0}}  className="project--section">
       <div className="project--container">
       <img className="project--info" src="_blank"></img>
       <div className="project__container--info">
@@ -60,8 +60,8 @@ export default function Projects({isVisible}) {
         </div>
       </div>
       </div>
-      </main>
       </motion.div> 
+      </main>
     </div>
   )
 }

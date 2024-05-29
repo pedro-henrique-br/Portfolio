@@ -8,8 +8,8 @@ export default function Header({isVisible}) {
   return (
     <header className="header">
       <Nav />
-      <motion.main initial={{opacity: 0}} animate={{opacity: isVisible ? 1 : 0}} className="header--container">
-        <section className="header__container--section">
+      <main className="header--container">
+        <motion.section initial={{opacity: 0}} animate={{opacity: isVisible ? 1 : 0}} className="header__container--section">
           <h1 className="header__section--title">Front-End Developer</h1>
           <p className="section--subtitle">{`Hi, i'm Pedro Barbosa a front-end Developer based in ilhabela, Brasil 📍`}</p>
           <div className="icons--container">
@@ -26,13 +26,13 @@ export default function Header({isVisible}) {
               <FaGithub size={36} />
             </a>
           </div>
-        </section>
+        </motion.section>
         <img
           className="header--profile-photo"
           src={ProfilePhoto}
           alt="profile photo"
         />
-      </motion.main>
+      </main>
     </header>
   );
 }

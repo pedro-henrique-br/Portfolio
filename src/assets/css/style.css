@@ -286,9 +286,9 @@ main {
 }
 
 .project--section {
-  gap: 80px;
   width: 100vw;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 }
@@ -296,9 +296,8 @@ main {
 .project__container--info {
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  gap: 10px;
   align-items: flex-start;
-  height: 35vh;
 }
 
 .project__container--info p {
@@ -357,6 +356,143 @@ main {
   gap: 10px;
 }
 
+/* Contact */
+
+.contact--section {
+  position: relative;
+  flex-direction: row-reverse;
+  display: flex;
+  width: 100vw;
+  height: 80vh;
+}
+
+.social__network--container {
+  justify-content: center;
+  flex-direction: column;
+  display: flex;
+  padding-right: 30px;
+  gap: 10px;
+}
+
+.social__network--container .icon {
+  font-size: 36px;
+}
+
+.social__network--container a {
+  color: #e0e0e0;
+}
+
+.social__network--container a:hover {
+  color: #ff5471;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+  gap: 20px;
+}
+
+form input {
+  height: 50px;
+  width: 450px;
+  background: none;
+  border: none;
+  border-bottom: 1px solid #333333;
+  text-align: start;
+  color: #e0e0e0;
+  font-size: 1rem;
+  font-weight: 600;
+  outline: none;
+}
+
+.submit-button {
+  cursor: pointer;
+  background: #333333;
+  color: #e0e0e0;
+  border: none;
+  border-radius: 6px;
+  height: 40px;
+  width: 120px;
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.submit-button:hover {
+  color: #ffff;
+}
+
+form input::placeholder {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #e0e0e0;
+}
+
+.keep-in-touch__container h1 {
+  font-size: 3.5rem;
+  font-weight: 700;
+  color: #ff5471;
+}
+
+.button--container {
+  margin-top: 20px;
+  padding-top: 20px;
+  width: 450px;
+  justify-content: space-around;
+  display: flex;
+  align-items: center;
+}
+
+.button--container button {
+  width: 150px;
+  height: 50px;
+  border-radius: 8px;
+  border: none;
+  background: #e0e0e0;
+}
+
+.button--container button:hover {
+  background: #ff5471;
+  cursor: pointer;
+  color: #e0e0e0;
+  font-weight: 800;
+}
+
+.keep-in-touch__container {
+  margin-top: 15vh;
+  align-items: flex-start;
+  flex-direction: column;
+  justify-content: flex-start;
+  display: flex;
+  margin-left: 12%;
+}
+
+/* Footer */
+
+footer {
+  height: 10%;
+  align-items: flex-end;
+  justify-content: center;
+  display: flex;
+}
+
+footer a {
+  cursor: pointer;
+  text-decoration: none;
+}
+
+footer h1 {
+  font-size: 1.5rem;
+  color: #e0e0e0;
+}
+
+footer span {
+  color: #ff5471;
+}
+
 /* Responsive */
 
 @media screen and (max-width: 1200px) {
@@ -367,7 +503,7 @@ main {
   /* Nav */
 
   nav {
-    position: fixed;
+    position: relative;
   }
 
   .nav--items {
@@ -402,6 +538,12 @@ main {
 
   .about__subtitle--goal {
     width: 100%;
+  }
+
+  /* Contact   */
+
+  .contact--section {
+    height: 80%;
   }
 }
 
@@ -586,6 +728,30 @@ main {
     width: 400px;
     text-align: center;
   }
+
+  /* Contact */
+
+  .contact--section {
+    flex-direction: column-reverse;
+    justify-content: space-between;
+    height: 80vh;
+  }
+
+  .social__network--container {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding-right: 0px;
+  }
+
+  .keep-in-touch__container {
+    margin-top: 10vh;
+    align-items: center;
+    flex-direction: column;
+    justify-content: flex-start;
+    display: flex;
+    margin-left: 0;
+  }
 }
 
 @media screen and (max-width: 600px) {
@@ -684,7 +850,7 @@ main {
   }
 
   .header--container {
-    height: 70vh;
+    height: 85vh;
     margin: 0px;
     display: flex;
     align-items: center;
@@ -742,6 +908,30 @@ main {
 
   .icon {
     height: 30px;
+  }
+
+  /* Contact */
+
+  footer h1 {
+    font-size: 1rem;
+  }
+
+  form input {
+    width: 300px;
+  }
+
+  .button--container {
+    justify-content: space-around;
+    gap: 0;
+    width: 300px;
+  }
+
+  .button--container button {
+    width: 140px;
+  }
+
+  .keep-in-touch__container h1 {
+    font-size: 2.5rem;
   }
 }
 
@@ -803,5 +993,11 @@ main {
   .project--info {
     height: 150px;
     width: 250px;
+  }
+
+  /* Contact */
+
+  .keep-in-touch__container h1 {
+    font-size: 2.5rem;
   }
 }
