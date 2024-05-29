@@ -696,7 +696,8 @@ footer span {
 
   .project__container--info {
     text-align: center;
-    gap: 10px;
+    gap: 20px;
+    margin-bottom: 2rem;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -883,7 +884,7 @@ footer span {
   }
 
   .project--info {
-    height: 150px;
+    height: 200px;
     width: 300px;
   }
 
