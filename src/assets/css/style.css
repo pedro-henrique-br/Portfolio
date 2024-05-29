@@ -190,15 +190,15 @@ header {
   display: flex;
   justify-content: center;
   height: 100vh;
-  width: 100%;
+  width: 100vw;
 }
 
 .about--container {
+  height: 100vh;
   width: 78vw;
   margin-top: 5vh;
   display: flex;
   flex-direction: column;
-  gap: 10px;
 }
 
 .about--container h1 {
@@ -227,7 +227,7 @@ header {
 }
 
 .icons--container {
-  padding-top: 20px;
+  padding-top: 10px;
 }
 
 .icons--container ul {
@@ -532,8 +532,14 @@ footer span {
 
   /* About */
 
+  .about--section {
+    background: #222222;
+    height: 120vh;
+  }
+ 
+
   .about--container {
-    margin-top: 10vh;
+    margin-top: 0vh;
   }
 
   .about__subtitle--goal {
