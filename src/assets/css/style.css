@@ -367,6 +367,8 @@ main {
 }
 
 .social__network--container {
+  width: 100vw;
+  align-items: flex-end;
   justify-content: center;
   flex-direction: column;
   display: flex;
@@ -467,7 +469,7 @@ form input::placeholder {
   flex-direction: column;
   justify-content: flex-start;
   display: flex;
-  margin-left: 12%;
+  margin-left: 20%;
 }
 
 /* Footer */
@@ -537,7 +539,6 @@ footer span {
     height: 120vh;
   }
  
-
   .about--container {
     margin-top: 0vh;
   }
