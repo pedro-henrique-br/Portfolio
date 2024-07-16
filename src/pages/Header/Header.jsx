@@ -2,12 +2,13 @@ import Nav from "../../parts/Nav/Nav";
 import ProfilePhoto from "../../assets/img/me.png";
 import { FaLinkedin } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa";
+import { motion } from "framer-motion";
 
-export default function Header() {
+export default function Header({isVisible}) {
   return (
     <header className="header">
       <Nav />
-      <main className="header--container">
+      <motion.main initial={{opacity: 0}} animate={{opacity: isVisible ? 1 : 0}} className="header--container">
         <section className="header__container--section">
           <h1 className="header__section--title">Front-End Developer</h1>
           <p className="section--subtitle">{`Hi, i'm Pedro Barbosa a front-end Developer based in ilhabela, Brasil 📍`}</p>
@@ -16,18 +17,22 @@ export default function Header() {
               style={{ cursor: "pointer" }}
               target="_blank"
               href="https://www.linkedin.com/in/pedro-barbosa-dev/">
-              <FaLinkedin size={36} color="#535353" />
+              <FaLinkedin size={36} />
             </a>
             <a
               style={{ cursor: "pointer" }}
               target="_blank"
               href="https://github.com/pedro-henrique-br">
-              <FaGithub size={36} color="#535353" />
+              <FaGithub size={36} />
             </a>
           </div>
         </section>
-        <img className="header--profile-photo" src={ProfilePhoto} alt="profile photo" />
-      </main>
+        <img
+          className="header--profile-photo"
+          src={ProfilePhoto}
+          alt="profile photo"
+        />
+      </motion.main>
     </header>
   );
 }

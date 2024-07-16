@@ -20,21 +20,27 @@ export default function Nav() {
       <h1
         className="nav--title"
         style={
-          mobileMenu === "active-menu" ? { display: "none" } : { display: "flex" }
+          mobileMenu === "active-menu"
+            ? { display: "none" }
+            : { display: "flex" }
         }>
-        {"<Pedro Barbosa />"}
+        <a>{"Pedro Barbosa Dev"}</a>
       </h1>
       <IoMenu
         style={
-          mobileMenu === "active-menu" ? { visibility: "hidden" } : { visibility: "visible" }
+          mobileMenu === "active-menu"
+            ? { visibility: "hidden", display: "none" }
+            : { visibility: "visible" }
         }
+        color="#e0e0e0"
         onClick={handleClickMenu}
-        size={56}
+        size={46}
         className="hamburguer--icon"
       />
       {mobileMenu ? (
         <div className={mobileMenu}>
           <GoX
+            color="#e0e0e0"
             className="close--menu"
             onClick={() => setMobileMenu("close")}
             size={56}
@@ -73,9 +79,7 @@ export default function Nav() {
       ) : null}
       <ul className="nav--items">
         <li className="nav--link">
-          <Link
-            className={location.pathname === "/" ? "active" : ""}
-            to={"/"}>
+          <Link className={location.pathname === "/" ? "active" : ""} to={"/"}>
             Home
           </Link>
         </li>
