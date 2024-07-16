@@ -1,7 +1,7 @@
 import Nav from "../../parts/Nav/Nav";
 import { motion } from "framer-motion";
 
-export default function About({isVisible}) {
+export default function About(isVisible) {
   const icons = [
     "git",
     "github",
@@ -11,7 +11,7 @@ export default function About({isVisible}) {
     "javascript",
     "react",
     "typescript",
-    "nodejs",
+    "mysql",
   ];
   const iconUrl = `https://skillicons.dev/icons?i=`;
 
