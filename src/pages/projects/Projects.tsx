@@ -10,7 +10,7 @@ export default function Projects() {
   const projects = [
     {
       name: "Movie App",
-      imageSrc: "https://private-user-images.githubusercontent.com/71238431/348882954-18cd935c-1eab-4301-a545-370ae3f1169c.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MjMyNDM1NTEsIm5iZiI6MTcyMzI0MzI1MSwicGF0aCI6Ii83MTIzODQzMS8zNDg4ODI5NTQtMThjZDkzNWMtMWVhYi00MzAxLWE1NDUtMzcwYWUzZjExNjljLnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNDA4MDklMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjQwODA5VDIyNDA1MVomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPTZiZTYzNjg5MDlmNmNlNTBjNzU2MzIwMGNlNDdmZDQzNGE4NjAwYjQ2YTNiOWUyOTYxMmQ3MGM1ZjQ0MmQ1ZjAmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0JmFjdG9yX2lkPTAma2V5X2lkPTAmcmVwb19pZD0wIn0.tR7aE7lNvPVSfEuSUz_6WSf74QY1vAFqDiC-16YepN4",
+      imageSrc: "/movieDB.png",
       info: "This is a movie app it allows users to search for films, view details of their film such as: film duration, IMBD rating, categories, company and film description. in addition to allowing you to save films as favorites and watch them later.",
       stack: ["html", "css", "javascript", "bootstrap"],
       sourceUrl: "https://github.com/pedro-henrique-br/Movie-App",
