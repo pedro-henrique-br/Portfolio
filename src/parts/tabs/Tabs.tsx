@@ -30,7 +30,7 @@ export const Tabs = () => {
         </Navbar.Brand>
         <Nav className={styles["Nav-links"]}>
               <Link
-                className={location.pathname === "/home" ? styles.Active : styles.Link}
+                className={location.pathname === "/home" || location.pathname === "/" ? styles.Active : styles.Link}
                 to={"/home"}>
                 Home
               </Link>
@@ -62,9 +62,7 @@ export const Tabs = () => {
       />
       <ul className={styles["menu-links"]}>
         <Link
-          className={
-            location.pathname === "/home" ? styles.Active : styles.Link
-          }
+          className={location.pathname === "/home" || location.pathname === "/" ? styles.Active : styles.Link}
           to={"/home"}>
           Home
         </Link>
