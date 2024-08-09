@@ -31,7 +31,7 @@ export const Home = () => {
         <Container>
           <img
             className="header--profile-photo"
-            src="public/static/images/me.png"
+            src="/me.png"
             alt="profile photo"
             />
         </Container>
