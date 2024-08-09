@@ -1,0 +1,166 @@
+.container {
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card-container {
+  height: 100vh;
+  width: 80vw;
+  flex-wrap: wrap;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 50px 0 150px 0;
+  gap: 40px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 500px;
+  height: 550px;
+  border-radius: 8px;
+  background: #272727;
+  margin-bottom: 100px;
+}
+
+.card-body {
+  height: 450px;
+  width: 500px;
+  gap: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  color: #E0E0E0;
+  font-size: 1.2rem;
+  font-weight: 600;
+  background: #272727;
+}
+
+.card-image {
+  height: 450px;
+}
+
+.project-title {
+  align-self: flex-start;
+  margin-left: 25px;
+}
+
+.button-container {
+  background: #272727;
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+}
+
+.button {
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #383838;
+  border-radius: 8px;
+  cursor: pointer;
+  color: #fff;
+  height: 40px;
+  width: 200px;
+  font-size: 1rem;
+  border: none;
+}
+
+.button:hover {
+  border: 1px solid #ff5471;
+}
+
+.button-icon {
+  background: none;
+  color: #ffff;
+}
+
+.project-info {
+  font-size: 1rem;
+  width: 450px;
+}
+
+.technologies-container {
+  display: flex;
+  gap: 10px;
+}
+
+.project-stack {
+  background: none;
+}
+
+.technologies-container li p {
+  opacity: 0;
+}
+
+.technologies-container li:hover p {
+  opacity: 1;
+}
+
+@media screen and (max-width: 1299px) {
+  .card-container {
+    overflow-y: visible;
+    width: 100vw;
+  }
+  
+}
+
+@media screen and (max-width: 600px) {
+  .card {
+    width: 350px;
+  }
+  
+  .card-body {
+    width: 350px;
+  }
+  
+  .card-image {
+    height: 250px;
+  }
+  
+  .button {
+    width: 150px;
+  }
+  
+  .project-info {
+    width: 300px;
+    font-size: 0.9rem;
+  }
+  .technologies-container {
+    margin-top: 25px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .card {
+    height: 450px;
+    width: 300px;
+  }
+  
+  .card-body {
+    width: 300px;
+  }
+  
+  .card-image {
+    height: 200px;
+  }
+  
+  .button {
+    width: 130px;
+  }
+  
+  .project-info {
+    width: 250px;
+    font-size: 0.9rem;
+  }
+  .technologies-container {
+    margin-top: 25px;
+  }
+}

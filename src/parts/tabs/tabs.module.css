@@ -1,0 +1,154 @@
+.Navbar {
+  font-size: 1.2rem;
+  width: 100vw;
+  height: 9vh;
+  display: flex;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+.Nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 75vw;
+}
+
+.Navbar-Title {
+  font-weight: 800;
+  font-size: 1.6rem;
+  color: #e0e0e0;
+}
+
+.Navbar-Title:hover {
+  cursor: pointer;
+  color: #ffff;
+}
+
+.Nav-links {
+  display: flex;
+  gap: 3vw;
+}
+
+.Nav-links .Link {
+  font-weight: 700;
+  font-size: 1.3rem;
+  text-decoration: none;
+  color: #e0e0e0;
+}
+
+.Nav-links .Link:hover {
+  color: #ff5471;
+}
+
+.Nav-links .Active {
+  font-weight: 700;
+  font-size: 1.3rem;
+  text-decoration: none;
+  color: #ff5471;
+}
+
+.Button {
+  display: none;
+  cursor: pointer;
+  color: #e0e0e0;
+  height: 50px;
+  width: 50px;
+}
+
+
+.menu-container {
+  left: 0;
+  top: 0;
+  transform: translateX(0%);
+  opacity: 1;
+  transition: 0.4s;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  height: 100vh;
+  width: 100vw;
+  background: #222222;
+}
+
+.Close-menu {
+  top: 0;
+  right: 0;
+  margin: 25px;
+  position: absolute;
+  height: 60px;
+  width: 60px;
+  color: #ffff;
+  cursor: pointer;
+}
+
+.menu-links {
+  height: 60vh;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+  display: flex;
+}
+
+.menu-links .Link {
+  font-weight: 700;
+  font-size: 1.3rem;
+  text-decoration: none;
+  color: #e0e0e0;
+}
+
+.menu-links .Link:hover {
+  color: #ff5471;
+}
+
+.menu-links .Active {
+  font-weight: 700;
+  font-size: 1.3rem;
+  text-decoration: none;
+  color: #ff5471;
+}
+
+@media screen and (max-width: 1200px) {
+  .Button {
+    display: flex;
+  }
+  .Nav-links {
+    display: none;
+  }
+  .menu-container {
+    display: flex;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .Navbar-Title {
+    font-weight: 800;
+    font-size: 1.2rem;
+    color: #e0e0e0;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .Navbar-Title {
+    margin-top: 10px;
+    font-size: 1rem;
+  }
+  .Button {
+    position: absolute;
+    right: 20px;
+  }
+}
+
+@media screen and (max-height: 568px) and (max-width: 580px) {
+  .Close-menu {
+    height: 30px;
+    margin: 15px;
+  }
+  
+  .Button {
+    margin-top: 10px;
+    height: 30px;
+  }
+}

@@ -1,0 +1,137 @@
+.container {
+  height: 85vh;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  color: #e0e0e0;
+  flex-direction: column;
+  font-size: 1.6rem;
+  margin-left: 12vw;
+  font-weight: 800;
+}
+
+.section {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 60vw;
+}
+
+.section h1 {
+  font-size: 2.6rem;
+}
+
+.section-subtitle {
+  margin-bottom: 30px;
+}
+
+.subtitle-goal {
+  margin-bottom: 30px;
+}
+
+.icons-container {
+  margin-top: 10px;
+}
+
+.icons {
+  gap: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.icon {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.icon img {
+  height: 60px;
+}
+
+.icon-subtitle {
+  margin-top: 5px;
+  font-size: 0.8rem;
+  opacity: 0;
+}
+
+.icon:hover .icon-subtitle {
+  opacity: 1;
+}
+
+@media screen and (max-width: 734px) {
+  .container {
+    height: 100vh;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 0;
+  }
+
+  .section {
+    align-items: flex-start;
+    width: 90vw;
+  }
+}
+
+@media screen and (max-width: 430px) {
+  .container h1 {
+    font-size: 2.1rem;
+  }
+  
+  .section {
+    margin: 0 40px 0 40px;
+    width: 95vw;
+    font-size: 1.1rem;
+  }
+  .icons {
+    justify-content: flex-start;
+    display: flex;
+    width: 95vw;
+    gap: 10px;
+  }
+  .icon-subtitle {
+    margin-top: 5px;
+    font-size: 0.6rem;
+    opacity: 0;
+  }
+  
+}
+
+  @media screen and (max-height: 800px) {
+    .container h1 {
+      font-size: 2rem;
+    }
+    
+    .section {
+      margin: 0 40px 0 40px;
+      font-size: 1.1rem;
+    }
+    .icons {
+      gap: 10px;
+    }
+    .icon img {
+      height: 40px;
+    }
+  }
+
+  @media screen and (max-height: 568px) and (max-width: 580px) {
+    .container h1 {
+      font-size: 1.5rem;
+    }
+    
+    .section {
+      margin: 0 40px 0 40px;
+      font-size: 0.7rem;
+    }
+  
+    .icon img {
+      height: 35px;
+    }
+    .icon-subtitle {
+      margin-top: 0px;
+      font-size: 0.6rem;
+      opacity: 0;
+    }
+  }
