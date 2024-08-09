@@ -10,7 +10,7 @@ export default function Projects() {
   const projects = [
     {
       name: "Movie App",
-      imageSrc: "/src/assets/img/MovieDB.png",
+      imageSrc: "./public/img/MovieDB.png",
       info: "This is a movie app it allows users to search for films, view details of their film such as: film duration, IMBD rating, categories, company and film description. in addition to allowing you to save films as favorites and watch them later.",
       stack: ["html", "css", "javascript", "bootstrap"],
       sourceUrl: "https://github.com/pedro-henrique-br/Movie-App",
