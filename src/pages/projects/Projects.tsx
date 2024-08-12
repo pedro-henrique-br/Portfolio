@@ -25,7 +25,7 @@ export default function Projects() {
         className={styles.container}
         animate={{ opacity: 1 }}
         initial={{ opacity: 0 }}>
-        <div className={styles["card-container"]} style={{overflowY: projects.length > 1 ? ("visible") : ("hidden")}}>
+        <div className={styles["card-container"]}>
           {projects &&
             projects.map((project) => (
               <Card key={project.name} className={styles["card"]}>
