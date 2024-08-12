@@ -1,0 +1,22 @@
+.container {
+  margin-left: 13vw;
+  height: 70vh;
+  display: flex;
+  align-items: center;
+}
+
+.icons-container {
+  position: absolute;
+  right: 0;
+  gap: 5px;
+  display: flex;
+  flex-direction: column;
+}
+
+.icon {
+  color: #fff;
+}
+
+.icon:hover {
+  color: #ff5471;
+}
