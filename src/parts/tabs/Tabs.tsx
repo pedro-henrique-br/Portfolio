@@ -14,10 +14,22 @@ export const Tabs = () => {
   const location = useLocation();
 
   const handleMenu = () => {
+    if(document.getElementById("icons-container") && document.getElementById("footer")){
+    // @ts-expect-error: Object is possibly 'null'.
+    document.getElementById("icons-container").style.visibility = "hidden"
+    // @ts-expect-error: Object is possibly 'null'.
+    document.getElementById("footer").style.visibility = "hidden"
+    }
     setMenu(true);
   }
 
   const closeMenu = () => {
+    if(document.getElementById("icons-container") && document.getElementById("footer")){
+      // @ts-expect-error: Object is possibly 'null'.
+      document.getElementById("icons-container").style.visibility = "visible"
+      // @ts-expect-error: Object is possibly 'null'.
+      document.getElementById("footer").style.visibility = "visible"
+    }
     setMenu(false);
   }
 

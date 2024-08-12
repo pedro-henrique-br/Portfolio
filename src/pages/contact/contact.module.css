@@ -6,6 +6,7 @@
 }
 
 .icons-container {
+  margin-right: 20px;
   position: absolute;
   right: 0;
   gap: 5px;
@@ -20,3 +21,35 @@
 .icon:hover {
   color: #ff5471;
 }
+
+@media screen and (max-width: 600px) {
+  .icons-container {
+    justify-content: center;
+    margin-bottom: 60px;
+    width: 100vw;
+    bottom: 0;
+    margin-right: 0px;
+    flex-direction: row;
+  }
+  .container {
+    justify-content: center;
+    margin-left: 0;
+    height: 70vh;
+    display: flex;
+    align-items: center;
+  }
+}
+
+@media screen and (max-width: 534px) {
+  .container {
+    height: 75vh;
+  }
+  .icons-container {
+    height: 30px;
+    margin-bottom: 40px;
+  }
+  .icon {
+    height: 30px;
+  }
+}
+

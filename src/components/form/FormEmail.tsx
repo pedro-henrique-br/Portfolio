@@ -71,12 +71,10 @@ export const FormEmail = () => {
       };
       fetchEmail(form.name, form.email, form.message);
     }
-
-    console.log(form);
   };
 
   return (
-    <Form className={styles.form} onSubmit={(e) => sendEmail(e)}>
+    <Form className={styles.form} id="form" onSubmit={(e) => sendEmail(e)}>
       <h1 className={styles.title}>Keep in touch</h1>
       <h4 className={styles["sub-title"]}>Let’s Chat!</h4>
       <Form.Group className="mb-3" controlId="formBasicEmail">

@@ -1,7 +1,8 @@
 .form {
+  gap: 5px;
   display: flex;
   flex-direction: column;
-  align-items: flex-end;
+  align-items: flex-start;
 }
 
 .title {
@@ -10,21 +11,34 @@
 }
 
 .sub-title {
+  margin-bottom: 35px;
   font-size: 2rem;
   font-style: italic;
   color: #ffff;
 }
 
 .input {
-  color: #ffff;
+  margin-bottom: 25px;
+  color: #ffffff;
   font-size: 1.1rem;
   background: none;
   border: none;
-  border-bottom: 1px solid #fff;
+  border-bottom: 1px solid #ffffff2f;
   width: 400px;
+  outline: none;
+  padding-bottom: 10px;
+}
+
+.input::placeholder {
+  color: #ffffff2f;
+}
+
+.button-form:hover {
+  color: #ff5471;
 }
 
 .button-form {
+  align-self: flex-end;
   cursor: pointer;
   display: flex;
   align-items: center;
@@ -32,20 +46,19 @@
   justify-content: flex-end;
   font-size: 1rem;
   color: #fff;
-  width: 120px;
-  height: 50px;
-  border: none;
   background: none;
+  border: none;
 }
 
 .buttons-container {
+  margin-top: 20px;
   width: 400px;
   display: flex;
   justify-content: space-around;
 }
 
-
 .button {
+  background: #b6b6b62f;
   cursor: pointer;
   border: none;
   width: 180px;
@@ -53,8 +66,49 @@
   border-radius: 8px;
 }
 
+.button:hover {
+  background: #9191912f;
+}
+
 .button a {
-  color: #000;
+  color: #e0e0e0;
   font-weight: 500;
   text-decoration: none;
+}
+
+@media screen and (max-width: 400px) {
+  .input {
+    font-size: 1rem;
+    width: 90vw;
+  }
+  .button {
+    width: 40vw;
+  }
+  .buttons-container {
+    width: 90vw;
+  }
+}
+
+@media screen and (max-height: 534px) {
+  .form {
+    gap: 0px;
+  }
+  .title {
+    font-size: 2rem;
+  }
+  .sub-title {
+    margin-bottom: 5px;
+    font-size: 1.5rem;
+  }
+  
+  .input {
+    font-size: 1rem;
+    width: 90vw;
+  }
+  .button {
+    width: 40vw;
+  }
+  .buttons-container {
+    width: 90vw;
+  }
 }

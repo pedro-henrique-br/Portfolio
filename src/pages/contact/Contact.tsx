@@ -13,7 +13,7 @@ export default function Contact() {
       <Tabs />
       <motion.div className={styles.container} animate={{ opacity: 1 }} initial={{ opacity: 0 }}>
         <FormEmail />
-        <Container className={styles["icons-container"]}>
+        <Container className={styles["icons-container"]} id="icons-container">
           <a 
             style={{ cursor: "pointer" }}
             target="_blank"
