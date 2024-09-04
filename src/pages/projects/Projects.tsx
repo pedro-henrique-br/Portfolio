@@ -16,6 +16,14 @@ export default function Projects() {
       sourceUrl: "https://github.com/pedro-henrique-br/Movie-App",
       previewUrl: "https://movie-app-beige-two-18.vercel.app/",
     },
+    {
+      name: "Ticketing system",
+      imageSrc: "/ticketingSystem.jpeg",
+      info: "Help Desk ticket opening system, the application allows the user to create and view their open tickets, while in the administrator section it is possible to see the calls answered and attended to.",
+      stack: ["typescript", "mui", "react", "supabase"],
+      sourceUrl: "https://github.com/pedro-henrique-br/Help-desk-ticketing-system",
+      previewUrl: "https://help-desk-ticketing-system-git-main-pedrohenriquebrs-projects.vercel.app/",
+    },
   ];
 
   return (
