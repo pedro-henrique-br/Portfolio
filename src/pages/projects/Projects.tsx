@@ -22,7 +22,7 @@ export default function Projects() {
       info: "Help Desk ticket opening system, the application allows the user to create and view their open tickets, while in the administrator section it is possible to see the calls answered and attended to.",
       stack: ["typescript", "mui", "react", "supabase"],
       sourceUrl: "https://github.com/pedro-henrique-br/Help-desk-ticketing-system",
-      previewUrl: "https://help-desk-ticketing-system-git-main-pedrohenriquebrs-projects.vercel.app/",
+      previewUrl: "https://help-desk-ticketing-system-mu.vercel.app/home",
     },
   ];
 
