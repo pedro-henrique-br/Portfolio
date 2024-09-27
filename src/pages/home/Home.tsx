@@ -29,11 +29,7 @@ export const Home = () => {
             </div>
           </Container>
         <Container>
-          <img
-            className="header--profile-photo"
-            src="/me.png"
-            alt="profile photo"
-            />
+          <Image src="me.png" rounded />
         </Container>
       </Container>
       </motion.div>
