@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import styles from "./home.module.css";
 import { Tabs } from "../../parts/tabs/Tabs";
-import { Container } from "react-bootstrap";
+import { Col, Container, Image, Row } from "react-bootstrap";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 
 export const Home = () => {
@@ -29,7 +29,11 @@ export const Home = () => {
             </div>
           </Container>
         <Container>
-          <Image src="me.png" rounded />
+          <Row>
+            <Col xs={6} md={4}>
+              <Image src="me.png" />
+            </Col>
+          </Row>
         </Container>
       </Container>
       </motion.div>
