@@ -18,7 +18,7 @@ export default function Projects() {
     },
     {
       name: "Ticketing system",
-      imageSrc: "https://private-user-images.githubusercontent.com/71238431/376721022-f3b92ccd-8bb2-461b-b1a7-25bcfe83f9e9.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MjkwMTMwNzAsIm5iZiI6MTcyOTAxMjc3MCwicGF0aCI6Ii83MTIzODQzMS8zNzY3MjEwMjItZjNiOTJjY2QtOGJiMi00NjFiLWIxYTctMjViY2ZlODNmOWU5LnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNDEwMTUlMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjQxMDE1VDE3MTkzMFomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPTkwYTYzODNmMTFhY2FkOWEyNGI4NWE3NjkwZDg0MzY3ZmQ5MTRlZDYzNGRkOTk2Mjc5NGQ5MmZlNjRmODE5NDAmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0In0.0Ze_ZGzPOO7r-pEMdl6xbxH51SegFuM_m7pg_19cR1Y",
+      imageSrc: "/ticketingSystem.JPG",
       info: "Help Desk ticket opening system, the application allows the user to create and view their open tickets, while in the administrator section it is possible to see the calls answered and attended to.",
       stack: ["typescript", "mui", "react", "supabase"],
       sourceUrl: "https://github.com/pedro-henrique-br/Help-desk-ticketing-system",

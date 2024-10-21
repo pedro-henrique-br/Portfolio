@@ -6,6 +6,7 @@
 }
 
 .card-container {
+  margin-bottom: 42vh;
   overflow-y: scroll;
   height: 100vh;
   width: 100vw;
@@ -13,8 +14,8 @@
   display: flex;
   justify-content: space-around;
   align-items: center;
-  padding: 50px 0 150px 0;
-  gap: 20px;
+  padding: 20px 0 50px 0;
+  gap: 10px;
 }
 
 .card {
@@ -25,7 +26,7 @@
   height: 550px;
   border-radius: 8px;
   background: #272727;
-  margin-bottom: 100px;
+  margin-bottom: 150px;
 }
 
 .card-body {
