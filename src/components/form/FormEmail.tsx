@@ -75,8 +75,8 @@ export const FormEmail = () => {
 
   return (
     <Form className={styles.form} id="form" onSubmit={(e) => sendEmail(e)}>
-      <h1 className={styles.title}>Keep in touch</h1>
-      <h4 className={styles["sub-title"]}>Let’s Chat!</h4>
+      <h1 className={styles.title}>Entre em contato</h1>
+      <h4 className={styles["sub-title"]}>Vamos conversar!</h4>
       <Form.Group className="mb-3" controlId="formBasicEmail">
         <Form.Control
           className={styles.input}
@@ -99,12 +99,12 @@ export const FormEmail = () => {
         <Form.Control
           className={styles.input}
           type="text"
-          placeholder="Hi Pedro, i wanted to tell that..."
+          placeholder="Olá Pedro, gostaria de dizer...."
           name="message"
         />
       </Form.Group>
       <Button className={styles["button-form"]} variant="primary" type="submit">
-        Send
+        Enviar
         <FaLongArrowAltRight />
       </Button>
       <div className={styles["buttons-container"]}>
@@ -112,14 +112,14 @@ export const FormEmail = () => {
           <a 
           target="_blank"
           href="https://api.whatsapp.com/send/?phone=12988933305&text=Olá Pedro&type=phone_number&app_absent=0">
-            Hire-me
+            Me contrate
           </a>
         </button>
         <button className={styles.button}>
           <a 
           target="_blank"
           href="https://drive.google.com/file/d/11Axt-t5P84oSwNy3OxKiYvJkQKqTvHMX/view?usp=sharing">
-            Donwload my CV
+             Veja meu currículo
           </a>
         </button>
       </div>
