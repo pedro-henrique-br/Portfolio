@@ -118,7 +118,7 @@ export const FormEmail = () => {
         <button className={styles.button}>
           <a 
           target="_blank"
-          href="https://drive.google.com/file/d/11Axt-t5P84oSwNy3OxKiYvJkQKqTvHMX/view?usp=sharing">
+          href="https://docs.google.com/document/d/13aqhUvK5uRY3zhXOLFMGG-0HT4YO9tyJ/edit?usp=sharing&ouid=116848033097707566366&rtpof=true&sd=true">
              Veja meu currículo
           </a>
         </button>
