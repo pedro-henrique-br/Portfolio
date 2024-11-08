@@ -1,6 +1,6 @@
 <div align="center">
   <h1>Portfolio Pedro Barbosa</h1>
-  <a href="https://portfolio-lyart-kappa-87.vercel.app/">Preview</a>
+  <a href="https://portfolio-pedrohenrique.vercel.app/">Preview</a>
 </div>
 
 <br/>
