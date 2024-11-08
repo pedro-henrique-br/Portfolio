@@ -9,17 +9,9 @@ export default function Projects() {
 
   const projects = [
     {
-      name: "Movie App",
-      imageSrc: "/movieDB.png",
-      info: "This is a movie app it allows users to search for films, view details of their film such as: film duration, IMBD rating, categories, company and film description. in addition to allowing you to save films as favorites and watch them later.",
-      stack: ["html", "css", "javascript", "bootstrap"],
-      sourceUrl: "https://github.com/pedro-henrique-br/Movie-App",
-      previewUrl: "https://movie-app-beige-two-18.vercel.app/",
-    },
-    {
-      name: "Ticketing system",
+      name: "Sistema de Chamados",
       imageSrc: "/ticketingSystem.JPG",
-      info: "Help Desk ticket opening system, the application allows the user to create and view their open tickets, while in the administrator section it is possible to see the calls answered and attended to.",
+      info: "Sistema de abertura de tickets de Help Desk, a aplicação permite que o usuário crie e visualize seus tickets abertos, enquanto, na seção de administrador, é possível ver e atender os chamados, e ver chamados fechados e em atendimento.",
       stack: ["typescript", "mui", "react", "supabase"],
       sourceUrl: "https://github.com/pedro-henrique-br/Help-desk-ticketing-system",
       previewUrl: "https://help-desk-ticketing-system-mu.vercel.app/home",
@@ -57,7 +49,7 @@ export default function Projects() {
                         size={22}
                         className={styles["button-icon"]}
                       />
-                      Source code
+                      Ver código
                     </Button>
                     <Button
                       className={styles.button}
@@ -67,7 +59,7 @@ export default function Projects() {
                         size={22}
                         className={styles["button-icon"]}
                       />
-                      Preview
+                       Ver demo
                     </Button>
                   </Container>
                   <Container
