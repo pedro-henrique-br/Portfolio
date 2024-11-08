@@ -5,6 +5,7 @@ import axios from "axios";
 import styles from "./formEmail.module.css";
 import { Bounce, toast } from "react-toastify";
 import { FaLongArrowAltRight } from "react-icons/fa";
+import { Container } from "react-bootstrap";
 
 export const FormEmail = () => {
   const sendEmail = (e: FormEvent<HTMLFormElement>) => {
@@ -107,22 +108,20 @@ export const FormEmail = () => {
         Enviar
         <FaLongArrowAltRight />
       </Button>
-      <div className={styles["buttons-container"]}>
-        <button className={styles.button}>
-          <a 
+      <Container className={styles["buttons-container"]}>
+        <Button
           target="_blank"
-          href="https://api.whatsapp.com/send/?phone=12988933305&text=Olá Pedro&type=phone_number&app_absent=0">
-            Me contrate
-          </a>
-        </button>
-        <button className={styles.button}>
-          <a 
+          href="https://api.whatsapp.com/send/?phone=12988933305&text=Olá Pedro&type=phone_number&app_absent=0"
+          className={styles.button}>
+          Me contrate
+        </Button>
+        <Button
           target="_blank"
-          href="https://docs.google.com/document/d/13aqhUvK5uRY3zhXOLFMGG-0HT4YO9tyJ/edit?usp=sharing&ouid=116848033097707566366&rtpof=true&sd=true">
-             Veja meu currículo
-          </a>
-        </button>
-      </div>
+          href="https://docs.google.com/document/d/13aqhUvK5uRY3zhXOLFMGG-0HT4YO9tyJ/edit?usp=sharing&ouid=116848033097707566366&rtpof=true&sd=true"
+          className={styles.button}>
+          Veja meu currículo
+        </Button>
+      </Container>
     </Form>
   );
 };
