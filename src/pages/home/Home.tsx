@@ -12,7 +12,7 @@ export const Home = () => {
         <Container className={styles["home-container"]}>
           <Container>
             <h1 className={styles["title"]}>Front-End Developer</h1>
-            <p className={styles["subtitle"]}>{`Hi, i'm Pedro Barbosa a front-end Developer based in ilhabela, Brasil 📍`}</p>
+            <p className={styles["subtitle"]}>{`Olá, Eu me chamo Pedro Barbosa e sou um Desenvolvedor front-end nascido em Ilhabela 📍`}</p>
             <div className={styles["icons-container"]}>
               <a
                 style={{ cursor: "pointer" }}
