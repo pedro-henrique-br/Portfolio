@@ -31,7 +31,7 @@ export default function About() {
             {"👋 Olá, eu me chamo "}
             <span style={{ color: "#ff5471", fontWeight: 800}}>Pedro Barbosa</span>
             {
-              "e sou um desenvolvedor front-end que ama criar aplicações que tragam soluções e estou cursando Analise e Desenvolvimento de Sistemas. Estou sempre estudando novas tecnologias e frameworks para melhorar minhas habilidades como desenvolvedor."
+              " e sou um desenvolvedor front-end que ama criar aplicações que tragam soluções e estou cursando Analise e Desenvolvimento de Sistemas. Estou sempre estudando novas tecnologias e frameworks para melhorar minhas habilidades como desenvolvedor."
             }
           </p>
           <h1 style={{ color: "#ff5471", fontWeight: 800}}>Qual é o meu objetivo?</h1>
