@@ -4,15 +4,16 @@ import styles from "./about.module.css";
 
 export default function About() {
   const icons = [
+    "npm",
     "git",
     "github",
-    "npm",
-    "linux",
+    "next",
     "bootstrap",
     "javascript",
     "react",
     "typescript",
     "mysql",
+    "nodejs"
   ];
   
   const iconUrl = `https://skillicons.dev/icons?i=`;
@@ -25,20 +26,19 @@ export default function About() {
         animate={{ opacity: 1 }}
         initial={{ opacity: 0 }}>
         <section className={styles.section}>
-          <h1 style={{ color: "#ff5471", fontWeight: 800}}>About Me</h1>
+          <h1 style={{ color: "#ff5471", fontWeight: 800}}>Sobre mim</h1>
           <p className={styles["section-subtitle"]}>
             {"👋 Hello, I'm "}
             <span style={{ color: "#ff5471", fontWeight: 800}}>Pedro Barbosa</span>
             {
-              " a passionate front-end development enthusiast and a dedicated student of Systems Analysis and Development. I'm always exploring new technologies and frameworks to improve my skills and stay up to date with industry trends."
+              "Sou um desenvolvedor front-end que ama criar aplicações que tragam soluções e estou cursando Analise e Desenvolvimento de Sistemas. Estou sempre estudando novas tecnologias e frameworks para melhorar minhas habilidades como desenvolvedor."
             }
           </p>
-          <h1 style={{ color: "#ff5471", fontWeight: 800}}>What is my goal?</h1>
+          <h1 style={{ color: "#ff5471", fontWeight: 800}}>Qual é o meu objetivo?</h1>
           <p className={styles["subtitle-goal"]}>
-            I am looking for new opportunities to improve my skills in the job
-            market. Like an internship or front-end developer.
+            Estou em busca de novas oportunidades que me proponham desenvolvimento e aprendizado.
           </p>
-          <h1 style={{ color: "#ff5471", fontWeight: 800}}>My tech stack</h1>
+          <h1 style={{ color: "#ff5471", fontWeight: 800}}>Minha stack</h1>
           <div className={styles["icons-container"]}>
             <ul className={styles["icons"]}>
               {iconUrl
