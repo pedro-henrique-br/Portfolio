@@ -49,17 +49,17 @@ export const Tabs = () => {
           <Link
             className={location.pathname === "/about" ? styles.Active : styles.Link}
             to={"/about"}>
-            About
+            Sobre mim
           </Link>
           <Link
             className={location.pathname === "/projects" ? styles.Active : styles.Link}
             to="/projects">
-            Projects
+            Projetos
           </Link>
           <Link
             className={location.pathname === "/contact" ? styles.Active : styles.Link}
             to="/contact">
-            Contact
+            Contato
           </Link>
         </Nav>
           <BsList onClick={handleMenu} className={styles.Button} />
