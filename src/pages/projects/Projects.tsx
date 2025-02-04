@@ -18,7 +18,7 @@ export default function Projects() {
     },
     {
       name: "Assistência Técnica",
-      imageSrc: "/assistenciaTecnica.JPG",
+      imageSrc: "/assistenciaTecnica.PNG",
       info: "Landing page para assistência técnica especializada em soluções de ti.",
       stack: ["typescript", "mui", "react"],
       sourceUrl: "https://github.com/pedro-henrique-br/Web-informatica",
