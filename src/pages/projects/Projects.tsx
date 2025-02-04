@@ -16,6 +16,14 @@ export default function Projects() {
       sourceUrl: "https://github.com/pedro-henrique-br/Help-desk-ticketing-system",
       previewUrl: "https://help-desk-ticketing-system-mu.vercel.app/home",
     },
+    {
+      name: "Assistência Técnica",
+      imageSrc: "/assistenciaTecnica.JPG",
+      info: "Landing page para assistência técnica especializada em soluções de ti.",
+      stack: ["typescript", "mui", "react"],
+      sourceUrl: "https://github.com/pedro-henrique-br/Web-informatica",
+      previewUrl: "https://california-informatica.vercel.app/",
+    },
   ];
 
   return (
